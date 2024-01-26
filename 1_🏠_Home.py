@@ -115,7 +115,7 @@ def create_footer():
         <br>
         <br>
         <div style="{footer}">
-        <a style="{button}" href="https://github.com/Ayesha-Siddiqua88" target="_blank">GitHub</a>
+        <a style="{button}" href="https://github.com/Asma-Khanam" target="_blank">GitHub</a>
         <br>
         <br>
         <p style="{text}">2023 Copyright. All Rights Reserved.</p>
