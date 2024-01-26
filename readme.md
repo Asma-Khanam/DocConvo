@@ -1,65 +1,57 @@
-# MultiPDF Chat App
 
-> You can find the tutorial for this project on [YouTube](https://youtu.be/dXxQ0LR-3Hg).
+![White Minimalist Simple Aesthetic Name Twitter Header](https://github.com/Asma-Khanam/DocConvo/assets/128472305/d95a2fb5-4d5d-4057-8736-9301342e598a)
 
-## Introduction
-------------
-The MultiPDF Chat App is a Python application that allows you to chat with multiple PDF documents. You can ask questions about the PDFs using natural language, and the application will provide relevant responses based on the content of the documents. This app utilizes a language model to generate accurate answers to your queries. Please note that the app will only respond to questions related to the loaded PDFs.
+# DocConvo
 
-## How It Works
-------------
+This project consists of two Streamlit applications for document-related queries and for visualizing data in Excel files. The applications are designed to provide a seamless experience for users interested in interacting with their documents and visualizing  data.
 
-![MultiPDF Chat App Diagram](./docs/PDF-LangChain.jpg)
 
-The application follows these steps to provide responses to your questions:
+# Features
 
-1. PDF Loading: The app reads multiple PDF documents and extracts their text content.
+## Document Chat
+- Language Translation: Users can translate their queries to various languages before interacting with the document chat system.
+- PDF Processing: Users can upload PDF documents, and the system extracts text for further analysis.
+- Conversational AI: Utilizes a Conversational Retrieval Chain for handling user queries and generating responses based on document content.
+- Word Cloud Visualization: Generates and displays a word cloud based on the processed document text.
 
-2. Text Chunking: The extracted text is divided into smaller chunks that can be processed effectively.
+## Excel Plotter
+- Excel File Upload: Users can upload Excel files (.xlsx or .csv) for data analysis and visualization.
+- Column Selection: Allows users to select specific columns for analysis.
+- Grouping and Plotting: Group and visualize data based on selected columns, with support for bar plots.
+- Download Options: Provides download links for the processed Excel file and generated plots.
 
-3. Language Model: The application utilizes a language model to generate vector representations (embeddings) of the text chunks.
+## Getting Started
 
-4. Similarity Matching: When you ask a question, the app compares it with the text chunks and identifies the most semantically similar ones.
+Install required dependencies:
 
-5. Response Generation: The selected chunks are passed to the language model, which generates a response based on the relevant content of the PDFs.
+```bash
+  pip install -r requirements.txt
+  pip install -r requirements2.txt
 
-## Dependencies and Installation
-----------------------------
-To install the MultiPDF Chat App, please follow these steps:
-
-1. Clone the repository to your local machine.
-
-2. Install the required dependencies by running the following command:
-   ```
-   pip install -r requirements.txt
-   ```
-
-3. Obtain an API key from OpenAI and add it to the `.env` file in the project directory.
-```commandline
-OPENAI_API_KEY=your_secrit_api_key
 ```
 
-## Usage
------
-To use the MultiPDF Chat App, follow these steps:
+## Run the Streamlit applications:
 
-1. Ensure that you have installed the required dependencies and added the OpenAI API key to the `.env` file.
+For running application:
+```bash
+streamlit run 1_🏠_Home.py
+```
+## Dependencies
 
-2. Run the `main.py` file using the Streamlit CLI. Execute the following command:
-   ```
-   streamlit run app.py
-   ```
+- [Streamlit](https://streamlit.io)
 
-3. The application will launch in your default web browser, displaying the user interface.
+- [PyPDF2](https://pypi.org/project/PyPDF2/)
 
-4. Load multiple PDF documents into the app by following the provided instructions.
+- [LangChain](https://www.langchain.com)
 
-5. Ask questions in natural language about the loaded PDFs using the chat interface.
+- [WordCloud]()
 
-## Contributing
-------------
-This repository is intended for educational purposes and does not accept further contributions. It serves as supporting material for a YouTube tutorial that demonstrates how to build this project. Feel free to utilize and enhance the app based on your own requirements.
+- [Matplotlib](https://matplotlib.org)
 
-## License
--------
-The MultiPDF Chat App is released under the [MIT License](https://opensource.org/licenses/MIT).
+- [Googletrans]()
+
+- [Pandas]()
+
+- [Plotly Express](https://plotly.com/python/plotly-express/)
+
+
